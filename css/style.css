@@ -1016,6 +1016,7 @@ section.tabs-nav { padding: 0; }
 	.menu-holder.open {
 	    left: 0;
 	}
+	.menu li.login:before { vertical-align: text-bottom; }
 
 	.secondary-nav {
 		margin-left: 0 !important;
