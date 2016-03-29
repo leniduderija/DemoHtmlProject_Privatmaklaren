@@ -15,24 +15,23 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
-	<body>	
-	<div id="page">
+	<body class="home">	
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<!-- <div class="container"> -->
 				<div class="row">
 					<a href="javascript:void(0)" class="open-panel"><i class="fa fa-bars"></i></a>
-					<div class="col-md-4 logo">
+					<div class="col-md-4 col-xs-2 logo">
 						<a href="#" title="Privatmaklaren">
 							<img src="images/logo.png" alt="Privatmaklaren logo">
 						</a>
 					</div>
-					<div class="col-md-8 menu-holder pull-right text-right">
+					<div class="col-md-8 col-xs-8 menu-holder pull-right text-right">
 						<ul class="menu">
 							<li><a href="#">Sälja</a></li>
 							<li><a href="#">Till salu</a></li>
 							<li><a href="#">Köpa</a></li>
 							<li><a href="#">Kontakt</a></li>
-							<li class="login"><span><img src="images/icon-login.png" alt="Login"></span><a href="#">Logga in</a></li>
+							<li class="login"><a href="#">Logga in</a></li>
 							<!-- <a href="javascript:void(0)" class="close-panel"><i class="fa fa-times"></i></a> -->
 						</ul>
 					</div>			
@@ -49,9 +48,9 @@
 					<li class="last">Pågående förmedlingar 120 st</li>
 				</ul>
 				<a class="btn btn-default btn-yellow" href="#" role="button">Sell today</a>
-			</div>			
+			</div>
 		</section>
-		<section class="region-select">
+		<section class="pattern-background grey-background">
 			<div class="container text-center">
 				<h1>Sök bostad i hela Sverige!</h1>
 				<form action="" method="POST" class="form-select_region">
@@ -73,7 +72,7 @@
 		<section class="boxes">
 			<div class="container text-center">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-xs-6">
 						<div class="box-title green-title">
 							<img src="images/green-top.png" alt="Buy">
 							<h1>Buy</h1>
@@ -106,7 +105,7 @@
 						</div>
 						<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Start Today</a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-xs-6">
 						<div class="box-title yellow-title">
 							<img src="images/orange-top.png" alt="Sell">
 							<h1>Sell</h1>
@@ -151,10 +150,10 @@
 					<div class="col-md-12">
 						<div id="refernces-carousel" class="owl-carousel">
 							<div class="item">
-								<div class="col-md-5 slider-img">
+								<div class="col-md-6 slider-img">
 									<img src="images/slider-img.jpg" alt="Slider 1">
 								</div>
-								<div class="col-md-7">
+								<div class="col-md-6">
 									<h1 class="text-right dot-separator pull-right">Sagavägen 32, Skogslund</h1>
 									<div class="slider-text">
 										Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem odio bibendum auctor, nisi elit consequat ipsum, nec auctor sagittis sem nibh id elit. Duis odio sit amet vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Proin gravida. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem odio bibendum auctor, nisi elit consequat ipsum, nec auctor sagittis sem nibh id elit. 
@@ -183,8 +182,38 @@
 					<span>Houses for sale</span>
 				</h3>
 				<div class="row">
-					<div class="col-md-12 sale-boxes-wrap">
-						<div class="col-md-4">
+					<div class="col-md-12 sale-boxes-wrap clearfix">
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="sale-box">
+								<div class="tag recent">Recently added</div>
+								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
+								<div class="sale-text text-center">
+									<h1>Sagavägen 32,  Skogslund</h1>
+								</div>
+								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="sale-box">
+								<div class="tag top-clicked">Most clicked this month</div>
+								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
+								<div class="sale-text text-center">
+									<h1>Sagavägen 32,  Skogslund</h1>
+								</div>
+								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="sale-box">
+								<div class="tag bidding">Bidding active</div>
+								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
+								<div class="sale-text text-center">
+									<h1>Sagavägen 32,  Skogslund</h1>
+								</div>
+								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -193,7 +222,7 @@
 								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -202,7 +231,7 @@
 								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -211,7 +240,7 @@
 								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -220,7 +249,7 @@
 								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -229,34 +258,7 @@
 								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="sale-box">
-								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
-								<div class="sale-text text-center">
-									<h1>Sagavägen 32,  Skogslund</h1>
-								</div>
-								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="sale-box">
-								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
-								<div class="sale-text text-center">
-									<h1>Sagavägen 32,  Skogslund</h1>
-								</div>
-								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="sale-box">
-								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
-								<div class="sale-text text-center">
-									<h1>Sagavägen 32,  Skogslund</h1>
-								</div>
-								<a href="#" class="btn btn-default btn-green full-width-btn" title="Start Today">Läs mer</a>
-							</div>
-						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
@@ -459,13 +461,13 @@
 					<ul>
 						<li>Privatmäklaren Skandinavien AB</li>
 						<li>Sankt Eriksgatan 82, 113 62 Stockholm</li>
-						<li>info@pm.se</li>
+						<li><a href="mailto: info@pm.se">info@pm.se</a></li>
 						<li>010-762 62 10</li>
 					</ul>
 				</div>
 			</section>
 		</footer>
-	</div>
+	
 		<!-- jQuery -->
 		<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
 		<!-- Bootstrap JavaScript -->
