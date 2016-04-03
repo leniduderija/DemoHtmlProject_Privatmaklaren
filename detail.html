@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +13,15 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
+		</script>
 
 	</head>
 	<body>
@@ -40,38 +49,47 @@
 			<!-- </div> -->
 		</nav>
 		<!-- END OF NAVIGATION -->
-		<section class="header detail" style="background-image: url(images/detail-header.jpg);">
-			<div class="container">
-				<div class="header-box-wrap">
-					<div class="header-box">
-						<div class="box-wrap text-left">
-							<h2>Sagavägen 32,<br>Skogslund</h2>
+		<section class="header detail" style="background-image: url(images/detail-header.jpg); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/detail-header.jpg', sizingMethod='scale'); -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/detail-header.jpg', sizingMethod='scale')">
+		<!-- <section class="header detail" style=""> -->
+			<!-- <div class="detail-image">
+				<img src="images/detail-header.jpg" alt="" class="detail-image">
+			</div> -->
+			<img src="images/detail-header.jpg" alt="" class="detail-image">
+			<div class="detail-box">
+				<div class="container">
+					<div class="header-box-wrap">
+						<div class="header-box">
+							<div class="box-wrap text-left">
+								<h2>Sagavägen 32,<br>Skogslund</h2>
+							</div>
+							<div class="box-wrap text-left">
+								<h4>Ägaren Erkki Palmu hanterar visningar och svarar på detaljfrågor.</h4>
+							</div>
+							<a href="#" class="btn btn-default btn-green full-width-btn" title="Mejla ägaren"><img src="images/icon-at.png" alt="">Mejla ägaren </a>
+							<div class="box-wrap text-center eller-ring">
+								<h5>ELLER RING 0722245946</h5>
+							</div>
 						</div>
-						<div class="box-wrap text-left">
-							<h4>Ägaren Erkki Palmu hanterar visningar och svarar på detaljfrågor.</h4>
-						</div>
-						<a href="#" class="btn btn-default btn-green full-width-btn" title="Mejla ägaren"><img src="images/icon-at.png" alt="">Mejla ägaren </a>
-					</div>
-					<div class="header-box">
-						<div class="box-wrap text-center">
-							<h5>ELLER RING 0722245946</h5>
-						</div>
-						<div class="box-wrap text-center">
-							<a href="#" title="Läs mer om ägarens roll här" class="underline">Läs mer om ägarens roll här</a>
-						</div>
-						<div class="box-wrap box-map"></div>
-						<div class="box-wrap text-center price">
-							<p>Pris 450 000 kr</p>
+						<div class="header-box">							
+							<div class="box-wrap text-center las-mer">
+								<a href="#" title="Läs mer om ägarens roll här" class="underline">Läs mer om ägarens roll här</a>
+							</div>
+							<div class="box-wrap box-map">
+								<img src="images/small-map.jpg" alt="">
+							</div>
+							<div class="box-wrap text-center price">
+								<p>Pris <span class="bold">450 000 kr</span></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section class="tabs-nav">
+		<section class="tabs-nav hidden-xs">
 			<table>
 				<tr>
-					<td class="current-tab-item"><a href="#Oversikt"><img src="images/icon-oversikt.png" alt="">Översikt</a></td>
+					<td><a class="" href="#oversikt"><img src="images/icon-oversikt.png" alt="">Översikt</a></td>
 					<td><a href="#fakta"><img src="images/icon-fakta.png" alt="">Fakta</a></td>
 					<td><a href="#bilder"><img src="images/icon-bilder.png" alt="">Bilder</a></td>
 					<td><a href="#karta"><img src="images/icon-karta.png" alt="">Karta</a></td>
@@ -82,437 +100,458 @@
 				</tr>
 			</table>
 		</section>
-		<section id="oversikt" class="clearfix">
-			<div class="container">
-				<div class="col-md-8 text-center">
-					<span class="direct-link">Direktlänk <a href="www.pm.se/6527" target="blank">www.pm.se/6527</a></span>
-					<p>
-						Vackert belägen villa med storslagen sjöutsikt byggd 1981. Tomt på 4000 kvm med goda möjligheter till trädgårds- och grönsaksodling. Barn- och husdjursvänligt mted knappa 200 m till allmän väg. Cirka 200 m även till båthus och goda bad- och fiskemöjligheter. Fiberbredband, vattenfilter och värmepump installerat.
-					</p>
-					<span class="dot-separator"></span>
-					<table class="col-md-12">
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Kommun</td>
-							<td class="col-md-6 text-left">Surahammar</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Pris</td>
-							<td class="col-md-6 text-left">1 850 000 kr eller högstbjudande</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Rum</td>
-							<td class="col-md-6 text-left">6 varav 4 sovrum</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Boarea</td>
-							<td class="col-md-6 text-left">149 m2</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Biarea</td>
-							<td class="col-md-6 text-left">93 m2</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Tomtarea</td>
-							<td class="col-md-6 text-left">937 m2</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Boendeform</td>
-							<td class="col-md-6 text-left">Villa</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Upplåtelseform</td>
-							<td class="col-md-6 text-left">Friköpt</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Byggår</td>
-							<td class="col-md-6 text-left">1974</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Taxeringskod</td>
-							<td class="col-md-6 text-left">220</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Taxeringsvärde</td>
-							<td class="col-md-6 text-left">922 000 kr</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Vatten/avlopp</td>
-							<td class="col-md-6 text-left">Kommunalt vatten och avlopp.</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Tillträde</td>
-							<td class="col-md-6 text-left">Enligt överenskommelse</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Energiprestanda</td>
-							<td class="col-md-6 text-left">70 kWh/m² och år</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right">Energiklass</td>
-							<td class="col-md-6 text-left">C</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold right-border text-right"></td>
-							<td class="col-md-6 text-left"><a href="#" title="Läs mer om energiklassser" class="underline">Läs mer om energiklassser</a></td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-4 text-center">
-					<div class="detail-person-box">
-						<h3>Mäklare</h3>
-						<div class="broker-box">
-							<div class="broker-img" style="background-image: url(images/broker-mikael.jpg)"></div>
-							<h4 class="dot-separator">Mikael Holm</h4>
-							<p>Registrerad fastighetsmäklare<br>010-762 60 05</p>
+		<div class="accordion" id="accordion">
+			<div class="panel">
+				<a data-toggle="collapse" data-target="#oversikt" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-oversikt.png" alt="">Översikt</a>
+				<section id="oversikt" class="collapse detail-section clearfix">
+					<div class="container">
+						<div class="col-md-6 col-sm-6 col-xs-12 text-center">
+							<span class="direct-link">Direktlänk <a href="www.pm.se/6527" target="blank">www.pm.se/6527</a></span>
+							<p>
+								Vackert belägen villa med storslagen sjöutsikt byggd 1981. Tomt på 4000 kvm med goda möjligheter till trädgårds- och grönsaksodling. Barn- och husdjursvänligt mted knappa 200 m till allmän väg. Cirka 200 m även till båthus och goda bad- och fiskemöjligheter. Fiberbredband, vattenfilter och värmepump installerat.
+							</p>
+							<span class="dot-separator clearfix"></span>
+							<table class="col-md-12">
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Kommun</td>
+									<td class="col-md-6 text-left">Surahammar</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Pris</td>
+									<td class="col-md-6 text-left">1 850 000 kr eller högstbjudande</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Rum</td>
+									<td class="col-md-6 text-left">6 varav 4 sovrum</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Boarea</td>
+									<td class="col-md-6 text-left">149 m2</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Biarea</td>
+									<td class="col-md-6 text-left">93 m2</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Tomtarea</td>
+									<td class="col-md-6 text-left">937 m2</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Boendeform</td>
+									<td class="col-md-6 text-left">Villa</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Upplåtelseform</td>
+									<td class="col-md-6 text-left">Friköpt</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Byggår</td>
+									<td class="col-md-6 text-left">1974</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Taxeringskod</td>
+									<td class="col-md-6 text-left">220</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Taxeringsvärde</td>
+									<td class="col-md-6 text-left">922 000 kr</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Vatten/avlopp</td>
+									<td class="col-md-6 text-left">Kommunalt vatten och avlopp.</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Tillträde</td>
+									<td class="col-md-6 text-left">Enligt överenskommelse</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Energiprestanda</td>
+									<td class="col-md-6 text-left">70 kWh/m² och år</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right">Energiklass</td>
+									<td class="col-md-6 text-left">C</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold right-border text-right"></td>
+									<td class="col-md-6 text-left"><a href="#" title="Läs mer om energiklassser" class="underline">Läs mer om energiklassser</a></td>
+								</tr>
+							</table>
 						</div>
-						<a href="#" class="btn btn-default btn-green full-width-btn" title="Kontakta mäklaren"><img src="images/icon-at.png" alt="">Kontakta mäklaren</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="fakta">
-			<div class="container">
-				<h3 class="line-through green text-center">
-					<span><img src="images/icon-fakta.png" alt="">Fakta</span>
-				</h3>
-				<table class="col-md-12">
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Rumsbeskrivning, allmänt
-						</td>
-						<td class="col-md-9 text-left">
-							ntréplan—Hall med klinkergolv och ljus tapet. Vardagsrum med parkettgolv, ljus tapet samt öppen spis med insats. Föräldrasovrummet är nyrenoverat med laminatgolv, mörka tapeter samt 6 st garderober. Ett sovrum med plastmatta och ljus tapet samt 2 st garderober. Köket är på entréplan. Övre plan—Två sovrum med laminatgolv och ljus tapet samt 2 st garderober i varje rum. Allrum med panel i innertak, laminatgolv och ljus tapet. Utgång till balkong. Bastu med dusch. Ljus kakel och klinker. Separat WC. Källarplan—Hall/allrum med laminatgolv och ljus tapet med genomgång till garage, tvättstuga samt förrådsrum med 4 st garderober. Pannrum med bergvärme och förvaringsutrymme.
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Kök
-						</td>
-						<td class="col-md-9 text-left">
-							Vitt kök, delvis med vitrinskåp. Köksö med bänkskivor i ek. Klinkergolv, ljust kakel samt tvättbar tapet. Stort kyl- och frysskåp. Öppen planlösning mot matplats och vardagsrum. Utgång till stor altan mot söder.
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Badrum/WC
-						</td>
-						<td class="col-md-9 text-left">
-							Badrum/WC på entréplan inredd med ny toalettstol, handfat & spegelskåp med belysning. WC på övre plan inredd med ny toalettstol, handfat & spegelskåp samt ljust klinker, kakel och tapet.
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Tvätt
-						</td>
-						<td class="col-md-9 text-left">
-							Stor nyrenoverad tvättstuga på källarplan med 2 tvättmaskiner & torktumlare samt grovkök i nära anslutning till det intill liggande garaget. Ljust kakel samt mörkbeige klinker. Nya vattenledningar.
-						</td>
-					</tr>
-				</table>
-				<div class="col-md-6 text-center table-title-separator">
-					<h4>Byggnad</h4>
-				</div>
-				<table class="col-md-12">
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Boendeform
-						</td>
-						<td class="col-md-9 text-left">
-							Villa
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Byggnadstyp
-						</td>
-						<td class="col-md-9 text-left">
-							1½ plans villa
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Byggnadsår
-						</td>
-						<td class="col-md-9 text-left">
-							1974
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Uppvärmning
-						</td>
-						<td class="col-md-9 text-left">
-							Bergvärme
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Ventilation
-						</td>
-						<td class="col-md-9 text-left">
-							Självdrag
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Fasad
-						</td>
-						<td class="col-md-9 text-left">
-							Tegel och träpanel
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Tak
-						</td>
-						<td class="col-md-9 text-left">
-							Betongpannor
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Stomme
-						</td>
-						<td class="col-md-9 text-left">
-							Trä
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Bjälklag
-						</td>
-						<td class="col-md-9 text-left">
-							Trä
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Grundläggning
-						</td>
-						<td class="col-md-9 text-left">
-							Källargrund
-						</td>
-					</tr>
-				</table>
-				<div class="col-md-6 text-center table-title-separator">
-					<h4>Allmänt om fastigheten</h4>
-				</div>
-				<table class="col-md-12">
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Taxeringskod
-						</td>
-						<td class="col-md-9 text-left">
-							220
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Tomtarea
-						</td>
-						<td class="col-md-9 text-left">
-							937 m2
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Upplåtelseform
-						</td>
-						<td class="col-md-9 text-left">
-							Friköpt
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Vatten/avlopp
-						</td>
-						<td class="col-md-9 text-left">
-							Kommunalt vatten och avlopp.
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Servitut etc.
-						</td>
-						<td class="col-md-9 text-left">
-							Last, Avtalsservitut: Kraftledning, 19-IM2-38/987<br>Inskrivning, Elkrafträtt, 21/184
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Tillträde
-						</td>
-						<td class="col-md-9 text-left">
-							Enligt överenskommelse
-						</td>
-					</tr>
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							Övrigt
-						</td>
-						<td class="col-md-9 text-left">
-							Lättskött tomt med naturfina stenpartier. Här finns svarta- och rödvinbär, havtorn, bigarråträd, äppelträd och ett litet trädgårdsland. Häck runt tomten som gör den insyns skyddad.
-						</td>
-					</tr>
-				</table>
-				<div class="col-md-6 text-center table-title-separator">
-					<h4>Vägbeskrivning</h4>
-				</div>
-				<table class="col-md-12">
-					<tr>
-						<td class="col-md-3 bold text-right right-border">
-							
-						</td>
-						<td class="col-md-9 text-left">
-							Surahammars kommun ligger mitt i Mälardalen, 2 mil norr om Västerås. Här finner du det bästa av två världar! Bo tryggt och naturskönt samtidigt nära storstadspuls. Kommunikationerna är väl utvecklade med bra vägar. Till Erikslunds köpcentrum i Västerås tar det ca 12 min. med bil. Med buss eller tåg tar det ca 25 min till Västerås C och från Stockholms C tar det ca 1½ timmar med tåg.
-						</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-		<section id="bilder">
-			<div class="container">
-				<h3 class="line-through green text-center">
-					<span><img src="images/icon-bilder.png" alt="">Bilder</span>
-				</h3>
-				<div class="col-md-12 images-holder">
-					<img src="images/house1.jpg" alt="">
-					<img src="images/house2.jpg" alt="">
-					<img src="images/house3.jpg" alt="">
-					<img src="images/house4.jpg" alt="">
-					<img src="images/house5.jpg" alt="">
-					<img src="images/house6.jpg" alt="">
-					<img src="images/house7.jpg" alt="">
-					<img src="images/house8.jpg" alt="">
-				</div>
-			</div>
-		</section>
-		<section id="karta">
-			<div class="container">
-				<h3 class="line-through green text-center">
-					<span><img src="images/icon-karta.png" alt="">Karta</span>
-				</h3>
-				<div id="google-map" class="google-map"></div>
-			</div>
-		</section>
-		<section id="ekonomi">
-			<div class="container">
-				<h3 class="line-through green text-center">
-					<span><img src="images/icon-ekonomi.png" alt="">Ekonomi</span>
-				</h3>
-				<div class="col-md-6 col-xs-12">
-					<div class="col-md-12 text-center table-title-separator">
-						<h4>Vägbeskrivning</h4>
-					</div>
-					<table class="col-md-12">
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Uppvärmning
-							</td>
-							<td class="col-md-6 text-left">
-								8300 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								El
-							</td>
-							<td class="col-md-6 text-left">
-								5500 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								VA
-							</td>
-							<td class="col-md-6 text-left">
-								5100 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Sotning
-							</td>
-							<td class="col-md-6 text-left">
-								250 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Renhållning
-							</td>
-							<td class="col-md-6 text-left">
-								2800 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Försäkring
-							</td>
-							<td class="col-md-6 text-left">
-								3100 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Försäkringsbolag
-							</td>
-							<td class="col-md-6 text-left">
-								Folksam
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Total driftskostnad ca
-							</td>
-							<td class="col-md-6 text-left">
-								25050 kr
-							</td>
-						</tr>
-						<tr>
-							<td class="col-md-6 bold text-right right-border">
-								Antal personer i hushållet
-							</td>
-							<td class="col-md-6 text-left">
-								2
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-		<section id="ekonomi">
-			<div class="container">
-				<h3 class="line-through green text-center">
-					<span><img src="images/icon-contact.png" alt="">Kontakt</span>
-				</h3>
-				<div class="col-md-6 col-xs-12 text-center">
-					<p>
-						Ring oss på 010-762 62 10 mellan 9.00 - 17.00 vardagar eller kontakta oss dygnet runt genom att fylla i formuläret nedan eller skicka ett mejl till oss på <a href="mailto:info@pm.se">info@pm.se.</a> Vi besvarar alla mejl inom 24h.
-					</p>
-					<span class="dot-separator"></span>
-					<form action="" method="POST" class="contact-form">
-						<input type="text" name="Avsandare" placeholder="Avsändare" class="contact-input full-width text-center">
-						<input type="text" name="e-postadress" placeholder="Avsändares e-postadress" class="contact-input full-width text-center">
-						<input type="text" name="telefon" placeholder="Telefon" class="contact-input full-width text-center">
-						<textarea name="Meddelande" placeholder="Meddelande" rows="5" class="contact-input full-width text-center"></textarea>
-						<input type="submit" class="col-md-6 btn btn-default btn-grey full-width no-float" value="Kontakta mig">
-					</form>
-				</div>
-				<div class="col-md-6 col-xs-12 text-center">
-					<div class="detail-person-box">
-						<h3>Mäklare</h3>
-						<div class="broker-box">
-							<div class="broker-img" style="background-image: url(images/broker-mikael.jpg)"></div>
-							<h4 class="dot-separator">Mikael Holm</h4>
-							<p>Registrerad fastighetsmäklare<br>010-762 60 05</p>
+						<div class="text-center clearfix">
+							<div class="detail-person-box pull-right">
+								<h4>Mäklare</h4>
+								<div>
+									<div class="broker-img" style="background-image: url(images/broker-mikael.jpg)"></div>
+									<h3 class="dot-separator">Mikael Holm</h3>
+									<p>Registrerad fastighetsmäklare<br>010-762 60 05</p>
+								</div>
+								<a href="#" class="btn btn-default btn-green full-width-btn" title="Kontakta mäklaren"><img src="images/icon-at.png" alt="">Kontakta mäklaren</a>
+							</div>
 						</div>
-						<a href="#" class="btn btn-default btn-green full-width-btn" title="Kontakta mäklaren"><img src="images/icon-at.png" alt="">Kontakta mäklaren</a>
 					</div>
-				</div>
+				</section>
 			</div>
-		</section>
-
+			<div class="panel">
+				<a data-toggle="collapse" data-target="#fakta" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-fakta.png" alt="">Fakta</a>
+				<section id="fakta" class="collapse detail-section clearfix">
+					<div class="container">
+						<h3 class="line-through green text-center">
+							<span><img src="images/icon-fakta.png" alt="">Fakta</span>
+						</h3>
+						<table class="col-md-12">
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Rumsbeskrivning, allmänt
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									<i>Entréplan</i>—Hall med klinkergolv och ljus tapet. Vardagsrum med parkettgolv, ljus tapet samt öppen spis med insats. Föräldrasovrummet är nyrenoverat med laminatgolv, mörka tapeter samt 6 st garderober. Ett sovrum med plastmatta och ljus tapet samt 2 st garderober. Köket är på entréplan.<br>
+									<i>Övre plan</i>—Två sovrum med laminatgolv och ljus tapet samt 2 st garderober i varje rum. Allrum med panel i innertak, laminatgolv och ljus tapet. Utgång till balkong. Bastu med dusch. Ljus kakel och klinker. Separat WC. <br>
+									<i>Källarplan</i>—Hall/allrum med laminatgolv och ljus tapet med genomgång till garage, tvättstuga samt förrådsrum med 4 st garderober. Pannrum med bergvärme och förvaringsutrymme.
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Kök
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Vitt kök, delvis med vitrinskåp. Köksö med bänkskivor i ek. Klinkergolv, ljust kakel samt tvättbar tapet. Stort kyl- och frysskåp. Öppen planlösning mot matplats och vardagsrum. Utgång till stor altan mot söder.
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Badrum/WC
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Badrum/WC på entréplan inredd med ny toalettstol, handfat & spegelskåp med belysning. WC på övre plan inredd med ny toalettstol, handfat & spegelskåp samt ljust klinker, kakel och tapet.
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Tvätt
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Stor nyrenoverad tvättstuga på källarplan med 2 tvättmaskiner & torktumlare samt grovkök i nära anslutning till det intill liggande garaget. Ljust kakel samt mörkbeige klinker. Nya vattenledningar.
+								</td>
+							</tr>
+						</table>
+						<div class="col-md-5 text-center table-title-separator">
+							<h4>Byggnad</h4>
+						</div>
+						<table class="col-md-12">
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Boendeform
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Villa
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Byggnadstyp
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									1½ plans villa
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Byggnadsår
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									1974
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Uppvärmning
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Bergvärme
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Ventilation
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Självdrag
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Fasad
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Tegel och träpanel
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Tak
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Betongpannor
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Stomme
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Trä
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Bjälklag
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Trä
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Grundläggning
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Källargrund
+								</td>
+							</tr>
+						</table>
+						<div class="col-md-5 text-center table-title-separator">
+							<h4>Allmänt om fastigheten</h4>
+						</div>
+						<table class="col-md-12">
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Taxeringskod
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									220
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Tomtarea
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									937 m2
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Upplåtelseform
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Friköpt
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Vatten/avlopp
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Kommunalt vatten och avlopp.
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Servitut etc.
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Last, Avtalsservitut: Kraftledning, 19-IM2-38/987<br>Inskrivning, Elkrafträtt, 21/184
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Tillträde
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Enligt överenskommelse
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									Övrigt
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Lättskött tomt med naturfina stenpartier. Här finns svarta- och rödvinbär, havtorn, bigarråträd, äppelträd och ett litet trädgårdsland. Häck runt tomten som gör den insyns skyddad.
+								</td>
+							</tr>
+						</table>
+						<div class="col-md-5 text-center table-title-separator">
+							<h4>Vägbeskrivning</h4>
+						</div>
+						<table class="col-md-12">
+							<tr>
+								<td class="col-md-3 bold text-right right-border">
+									
+								</td>
+								<td class="col-md-9 text-left big-padd">
+									Surahammars kommun ligger mitt i Mälardalen, 2 mil norr om Västerås. Här finner du det bästa av två världar! Bo tryggt och naturskönt samtidigt nära storstadspuls. Kommunikationerna är väl utvecklade med bra vägar. Till Erikslunds köpcentrum i Västerås tar det ca 12 min. med bil. Med buss eller tåg tar det ca 25 min till Västerås C och från Stockholms C tar det ca 1½ timmar med tåg.
+								</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+			</div>
+			<div class="panel">
+				<a data-toggle="collapse" data-target="#bilder" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-bilder.png" alt="">Bilder</a>
+				<section id="bilder" class="collapse detail-section">
+					<div class="container">
+						<h3 class="line-through green text-center">
+							<span><img src="images/icon-bilder.png" alt="">Bilder</span>
+						</h3>
+						<div class="col-md-12 images-holder">
+							<img class="lazy" data-original="images/house1.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house2.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house3.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house4.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house5.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house6.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house7.jpg" width="1120" height="748" alt="">
+							<img class="lazy" data-original="images/house8.jpg" width="1120" height="748" alt="">
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="panel">
+				<a data-toggle="collapse" data-target="#karta" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-karta.png" alt="">Karta</a>
+				<section id="karta" class="collapse detail-section">
+					<div class="container">
+						<h3 class="line-through green text-center">
+							<span><img src="images/icon-karta.png" alt="">Karta</span>
+						</h3>
+						<div id="google-map" class="google-map"></div>
+					</div>
+				</section>
+			</div>
+			<div class="panel">
+				<a data-toggle="collapse" data-target="#ekonomi" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-ekonomi.png" alt="">Ekonomi</a>
+				<section id="ekonomi" class="collapse detail-section clearfix">
+					<div class="container">
+						<h3 class="line-through green text-center">
+							<span><img src="images/icon-ekonomi.png" alt="">Ekonomi</span>
+						</h3>
+						<div class="col-md-6 col-xs-12">
+							<div class="col-md-12 text-center table-title-separator">
+								<h4>Driftskostnader</h4>
+							</div>
+							<table class="col-md-12">
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Uppvärmning
+									</td>
+									<td class="col-md-6 text-left">
+										8300 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										El
+									</td>
+									<td class="col-md-6 text-left">
+										5500 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										VA
+									</td>
+									<td class="col-md-6 text-left">
+										5100 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Sotning
+									</td>
+									<td class="col-md-6 text-left">
+										250 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Renhållning
+									</td>
+									<td class="col-md-6 text-left">
+										2800 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Försäkring
+									</td>
+									<td class="col-md-6 text-left">
+										3100 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Försäkringsbolag
+									</td>
+									<td class="col-md-6 text-left">
+										Folksam
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Total driftskostnad ca
+									</td>
+									<td class="col-md-6 text-left">
+										25050 kr
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-6 bold text-right right-border">
+										Antal personer i hushållet
+									</td>
+									<td class="col-md-6 text-left">
+										2
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="panel">
+				<section id="kontakt" class="collapse detail-section clearfix">
+					<div class="container">
+						<a data-toggle="collapse" data-target="#kontakt" data-parent="#accordion" class="visible-xs mobile-accordion"><img src="images/icon-contact.png" alt="">Kontakt</a>
+						<h3 class="line-through green text-center">
+							<span><img src="images/icon-contact.png" alt="">Kontakt</span>
+						</h3>
+						<div class="col-md-6 col-sm-6 col-xs-12 text-center">
+							<p>
+								Ring oss på 010-762 62 10 mellan 9.00 - 17.00 vardagar eller kontakta oss dygnet runt genom att fylla i formuläret nedan eller skicka ett mejl till oss på <a href="mailto:info@pm.se">info@pm.se.</a> Vi besvarar alla mejl inom 24h.
+							</p>
+							<span class="dot-separator"></span>
+							<form action="" method="POST" class="contact-form">
+								<input type="text" name="Avsandare" placeholder="Avsändare" class="contact-input full-width text-center">
+								<input type="text" name="e-postadress" placeholder="Avsändares e-postadress" class="contact-input full-width text-center">
+								<input type="text" name="telefon" placeholder="Telefon" class="contact-input full-width text-center">
+								<textarea name="Meddelande" placeholder="Meddelande" rows="5" class="contact-input full-width text-center"></textarea>
+								<input type="submit" class="col-md-6 btn btn-default btn-grey full-width no-float" value="Kontakta mig">
+							</form>
+						</div>
+						<div class="text-center">
+							<div class="detail-person-box pull-right">
+								<h3>Mäklare</h3>
+								<div class="">
+									<div class="broker-img" style="background-image: url(images/broker-mikael.jpg)"></div>
+									<h3 class="dot-separator">Mikael Holm</h3>
+									<p>Registrerad fastighetsmäklare<br>010-762 60 05</p>
+								</div>
+								<a href="#" class="btn btn-default btn-green full-width-btn" title="Kontakta mäklaren"><img src="images/icon-at.png" alt="">Kontakta mäklaren</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 		<!-- FOOTER SECTION -->
 		<section class="partners">
 			<div class="container">
@@ -557,7 +596,7 @@
 			<section class="footer-top">
 				<div class="container">
 					<div class="row">
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Sälja</li>
 					    		<li>
@@ -580,7 +619,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Köpa</li>
 					    		<li>
@@ -600,7 +639,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Till salu</li>
 					    		<li>
@@ -617,7 +656,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Om oss</li>
 					    		<li>
@@ -631,7 +670,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Kontakt</li>
 					    		<li>
@@ -665,11 +704,21 @@
 		<!-- END FOOTER SECTION -->
 
 		<!-- jQuery -->
-		<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+		<!--[if !IE 8]> -->
+		    <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+		<!-- <![endif]-->
+
+		<!--[if IE 8]>
+		    <script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+		<![endif]-->
+
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/jquery.lazyload.min.js"></script>
+		<script src="js/vendor/html5shiv.js"></script>
+		<script src="js/vendor/jquery.placeholder.min.js"></script>
 		<script src="js/script.js"></script>
 
 		<script type="text/javascript">
@@ -705,7 +754,7 @@
                  
                 google.maps.event.addDomListener(window, 'resize', function() {
                     map.setCenter(new google.maps.LatLng(location[0], location[1]));
-                });
+                });                
             }
             function loadScript() {
               var script = document.createElement('script');
@@ -715,6 +764,9 @@
               document.body.appendChild(script);
             }
             window.onload = loadScript;
+            $('#karta').on('shown.bs.collapse', function () {
+			 	initialize(); 
+			});
         </script>
 	</body>
 </html>

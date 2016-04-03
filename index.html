@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +13,38 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
+		<script>
+			'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
+		</script>
+
 	</head>
 	<body class="home">	
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<!-- <div class="container"> -->
-				<div class="row">
-					<a href="javascript:void(0)" class="open-panel"><i class="fa fa-bars"></i></a>
-					<div class="col-md-4 col-xs-2 logo">
-						<a href="#" title="Privatmaklaren">
-							<img src="images/logo.png" alt="Privatmaklaren logo">
-						</a>
-					</div>
-					<div class="col-md-8 col-xs-8 menu-holder pull-right text-right">
-						<ul class="menu">
-							<li><a href="#">Sälja</a></li>
-							<li><a href="#">Till salu</a></li>
-							<li><a href="#">Köpa</a></li>
-							<li><a href="#">Kontakt</a></li>
-							<li class="login"><a href="#">Logga in</a></li>
-							<!-- <a href="javascript:void(0)" class="close-panel"><i class="fa fa-times"></i></a> -->
-						</ul>
-					</div>			
+			<div class="row">
+				<a href="javascript:void(0)" class="open-panel"><i class="fa fa-bars"></i></a>
+				<div class="col-md-4 col-xs-2 logo">
+					<a href="#" title="Privatmaklaren">
+						<img src="images/logo.png" alt="Privatmaklaren logo">
+					</a>
 				</div>
-			<!-- </div> -->
+				<div class="col-md-8 col-xs-8 menu-holder pull-right text-right">
+					<ul class="menu">
+						<li><a href="#">Sälja</a></li>
+						<li><a href="#">Till salu</a></li>
+						<li><a href="#">Köpa</a></li>
+						<li><a href="#">Kontakt</a></li>
+						<li class="login"><a href="#">Logga in</a></li>
+						<!-- <a href="javascript:void(0)" class="close-panel"><i class="fa fa-times"></i></a> -->
+					</ul>
+				</div>			
+			</div>
 		</nav>
 		<section class="header" style="background-image: url(images/home-header.jpg);">
 			<div class="container">
@@ -186,6 +194,7 @@
 						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="sale-box">
 								<div class="tag recent">Recently added</div>
+								<!-- <div class="sale-img" style="background-image: url(images/house-for-sale.jpg); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/house-for-sale.jpg', sizingMethod='scale'); -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/house-for-sale.jpg', sizingMethod='scale')"></div> -->
 								<div class="sale-img" style="background-image: url(images/house-for-sale.jpg);"></div>
 								<div class="sale-text text-center">
 									<h1>Sagavägen 32,  Skogslund</h1>
@@ -362,7 +371,7 @@
 			<section class="footer-top">
 				<div class="container">
 					<div class="row">
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Sälja</li>
 					    		<li>
@@ -385,7 +394,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Köpa</li>
 					    		<li>
@@ -405,7 +414,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Till salu</li>
 					    		<li>
@@ -422,7 +431,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Om oss</li>
 					    		<li>
@@ -436,7 +445,7 @@
 					    		</li>
 					    	</ul>
 					    </div>
-					    <div class="col-md-15 col-sm-3 footer-box">
+					    <div class="col-md-15 col-sm-3 col-xs-6 footer-box">
 					    	<ul>
 					    		<li class="footer-title">Kontakt</li>
 					    		<li>
@@ -469,11 +478,21 @@
 		</footer>
 	
 		<!-- jQuery -->
-		<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+		<!--[if !IE 8]> -->
+		    <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+		<!-- <![endif]-->
+
+		<!--[if IE 8]>
+		    <script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+		<![endif]-->
+		
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/html5shiv.js"></script>
+		<script src="js/vendor/jquery.placeholder.min.js"></script>
+		<!-- <script src="js/vendor/matchMedia.addListener.js"></script> -->
 		<script src="js/script.js"></script>
 	</body>
 </html>
